@@ -1,9 +1,11 @@
 #include "movie.h"
 #include "database.h"
 
+using namespace std;
+
 Movie::Movie() {}
 
-Movie::Movie(int id, std::string title, std::string genre, int duration, std::string language) {
+Movie::Movie(int id, string title, string genre, int duration, string language) {
     this->id = id;
     this->title = title;
     this->genre = genre;
@@ -14,7 +16,7 @@ Movie::Movie(int id, std::string title, std::string genre, int duration, std::st
 void Movie::displayMovies() {
     Database db;
     if (db.connect()) {
-        std::string query = "SELECT * FROM movies";
+        string query = "SELECT * FROM movies";
         db.executeQuery(query);
     }
 }
