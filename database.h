@@ -5,20 +5,22 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Database {
 private:
     MYSQL *conn;
-    const std::string host = "sql.freedb.tech";
-    const std::string user = "freedb_prakhar";
-    const std::string password = "s#mGQ656JlJtvzAZ";
-    const std::string database = "freedb_movie-booking-syst";
+    const string host = "sql.freedb.tech";
+    const string user = "freedb_prakhar";
+    const string password = "s#mGQ656JlJtvzAZ";
+    const string database = "freedb_movie-booking-syst";
     const unsigned int port = 3306;
 
 public:
     Database();
     ~Database();
     bool connect();
-    bool executeQuery(const std::string& query);
+    bool executeQuery(const string& query);
 };
 
 #endif
