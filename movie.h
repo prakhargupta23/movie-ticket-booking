@@ -4,16 +4,18 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Movie {
 public:
     int id;
-    std::string title;
-    std::string genre;
+    string title;
+    string genre;
     int duration;
-    std::string language;
+    string language;
 
     Movie();
-    Movie(int id, std::string title, std::string genre, int duration, std::string language);
+    Movie(int id, string title, string genre, int duration, string language);
     void displayMovies();
 };
 
