@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Booking {
 public:
     int id;
@@ -11,7 +13,7 @@ public:
     int movie_id;
     int theater_id;
     int screen_id;
-    std::string seat_number;
+    string seat_number;
     bool is_paid;
 
     Booking();
