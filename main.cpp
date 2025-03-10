@@ -1,11 +1,13 @@
 #include "database.h"
 
+using namespace std;
+
 int main() {
     Database db;
     if (db.connect()) {
-        std::cout << "Database connection successful!" << std::endl;
+        cout << "Database connection successful!" << endl;
     } else {
-        std::cout << "Database connection failed!" << std::endl;
+        cout << "Database connection failed!" << endl;
     }
     return 0;
 }
