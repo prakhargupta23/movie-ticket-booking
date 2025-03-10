@@ -5,6 +5,8 @@
 #include "movie.h"
 #include "booking.h"
 
+using namespace std;
+
 class UI {
 public:
     void mainMenu();
